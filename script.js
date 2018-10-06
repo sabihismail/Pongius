@@ -1,25 +1,25 @@
-var KEY_DOWN = 40;
-var KEY_UP = 38;
-var PADDLE_SHIFT = 7;
-var SPEED_CHANGE = 0.25;
+let KEY_DOWN = 40;
+let KEY_UP = 38;
+let PADDLE_SHIFT = 7;
+let SPEED_CHANGE = 0.25;
 
-var canvas = document.getElementById('myCanvas');
-var ctx = canvas.getContext('2d');
-var ballRadius = 10;
-var x = canvas.width / 2;
-var y = canvas.height / 2;
+let canvas = document.getElementById('myCanvas');
+let ctx = canvas.getContext('2d');
+let ballRadius = 10;
+let x = canvas.width / 2;
+let y = canvas.height / 2;
 // speed
-var dx = 2;
-var dy = -2;
-var paddleHeight = 75;
-var paddleWidth = 10;
-var paddleX = 0;
-var paddleY = canvas.height / 2 - paddleHeight / 2;
-var downPressed = false;
-var upPressed = false;
-var score = 0;
-var img = new Image(); // ball image
-var imgp = new Image(); // paddle image
+let dx = 2;
+let dy = -2;
+let paddleHeight = 75;
+let paddleWidth = 10;
+let paddleX = 0;
+let paddleY = canvas.height / 2 - paddleHeight / 2;
+let downPressed = false;
+let upPressed = false;
+let score = 0;
+let img = new Image(); // ball image
+let imgp = new Image(); // paddle image
 img.src = 'ball.png';
 imgp.src = 'paddle.png';
 
@@ -90,4 +90,4 @@ function draw() {
     y += dy;
 }
 
-var game = setInterval(draw, 10);
+let game = setInterval(draw, 10);
